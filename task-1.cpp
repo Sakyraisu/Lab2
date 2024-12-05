@@ -1,16 +1,16 @@
-#include <iostream> //потоки ввода / вывода
+#include <iostream> //РїРѕС‚РѕРєРё РІРІРѕРґР° / РІС‹РІРѕРґР°
 #include <stdio.h>
-#include <math.h> // математические функции
-#include <locale.h>// функция setlocale() для подключения
-//кодировочной таблицы
+#include <math.h> // РјР°С‚РµРјР°С‚РёС‡РµСЃРєРёРµ С„СѓРЅРєС†РёРё
+#include <locale.h>// С„СѓРЅРєС†РёСЏ setlocale() РґР»СЏ РїРѕРґРєР»СЋС‡РµРЅРёСЏ
+//РєРѕРґРёСЂРѕРІРѕС‡РЅРѕР№ С‚Р°Р±Р»РёС†С‹
 using namespace std;
 int main()
 {
-    setlocale(LC_ALL, "Russian"); //Подключение русского языка
+    setlocale(LC_ALL, "Russian"); //РџРѕРґРєР»СЋС‡РµРЅРёРµ СЂСѓСЃСЃРєРѕРіРѕ СЏР·С‹РєР°
     float x, y, a, b, f;
-    printf("Введите число a:"); 
+    printf("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ a:"); 
     cin >> a;
-    printf("Введите число b:"); 
+    printf("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ b:"); 
     cin >> b;
     f = (8.15 * sqrt(3) * b * log(a)) / (24.38 * cos(b) * (exp(a) - pow(a, a)));
     printf("F=%f\n", f);
